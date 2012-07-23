@@ -31,8 +31,13 @@ XHTML 1.0 Transitional範本
             description：網頁的內容描述。
             generator：產生這份網頁的軟體名稱。
             keyword：這個網頁的關鍵字。
-            robots：要求搜索引擎的索引軟體對這個網頁採取的行動。
+            robots：宣告「遵循此屬性的搜索引擎」的索引程式對這個網頁採取的行為。
           content屬性：這個metadata名稱之內容
+						robots
+							index
+								允許索引程式將此網頁內入搜尋結果中
+							follow
+								允許索引程式進入此網頁所包含的超連結
           http-equiv屬性：用來變更伺服器跟user-agent的行為，使用content屬性定義這個屬性的值。
             content-type：
               text/html：原本要用application/xhtml+xml的MIME（Multipurpose Internet Mail Extensions，多用途網際網路郵件檔案類型），不過為了增加HTML 4相容性故使用text/html
